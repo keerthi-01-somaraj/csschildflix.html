@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>css child flex</title>
+</head>
+<style>  .order{
+    display: flex;
+   align-items: stretch;
+   background-color: rgb(186, 233, 84);
+}
+.order>div{
+    background-color: rgb(192, 242, 255);
+    width: 100px;
+    padding: 10px;
+    line-height:75px ;
+    text-align: center;
+    font-size:30px ;
+    margin: 20px;
+}
+.grow{
+    display: flex;
+    align-items: stretch;
+    background-color: rgb(80, 200, 255);
+    
+}
+.grow>div{
+    background-color: rgb(255, 248, 192);
+    width: 100px;
+    padding: 10px;
+    line-height:75px ;
+    text-align: center;
+    font-size:30px ;
+    margin: 20px;
+}
+.shrink{
+  display: flex;
+  background-color: rgb(80, 255, 197);
+  align-items: stretch;
+}
+.shrink>div{
+    background-color: pink;
+    width: 100px;
+    padding: 10px;
+    line-height:75px ;
+    text-align: center;
+    font-size:30px ;
+    margin: 20px;
+}
+.basis{
+  display: flex;
+  background-color: rgb(147, 255, 80);
+  align-items: stretch;
+}
+.basis>div{
+    background-color: rgb(213, 204, 206);
+    width: 100px;
+    padding: 10px;
+    line-height:75px ;
+    text-align: center;
+    font-size:30px ;
+    margin: 20px;
+}
+.self{
+  display: flex;
+  background-color: rgb(153, 79, 167);
+  align-items: stretch;
+  height: 300px;
+}
+.self>div{
+    background-color: rgb(192, 255, 226);
+    width: 100px;
+    padding: 10px;
+    line-height:75px ;
+    text-align: center;
+    font-size:30px ;
+    margin: 20px;
+}</style>
+<body>
+    <h1>Child Elements</h1>
+    <h2>Order</h2>
+    <div class="order"> 
+        <div style="order: 2">1</div>
+        <div style="order: 6">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+        <div style="order: 3">5</div> 
+         <div style="order: 56">6</div>
+
+
+    </div>
+    <h1>Flex-grow</h1>
+    <div class="grow"> 
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="flex-grow: 3;">4</div>
+        <div>5</div>
+
+    </div>
+    <h1>Flex-shrink</h1>
+    <div class="shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="Flex-shrink: 0;">6</div>
+        <div>7</div>
+    </div>
+    <h1>flex-basis</h1>
+    <div class="basis">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="flex-basis:300px ;">4</div>
+        <div>5</div>
+    </div>
+    <h1>Align-self</h1>
+    <div class="self">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div style="align-self:center;">4</div>
+        <div>5</div>
+    </div>
+    
+</body>
+</html>
